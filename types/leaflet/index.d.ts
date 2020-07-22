@@ -1280,11 +1280,11 @@ export class GeoJSON<P = any> extends FeatureGroup<P> {
      */
     static asFeature<P = any>(geojson: geojson.Feature<geojson.GeometryObject, P> | geojson.GeometryObject): geojson.Feature<geojson.GeometryObject, P>;
 
-    constructor(geojson?: geojson.GeoJson, options?: GeoJSONOptions<P>)
+    constructor(geojson?: geojson.GeoJSON, options?: GeoJSONOptions<P>)
     /**
      * Adds a GeoJSON object to the layer.
      */
-    addData(data: geojson.GeoJson): Layer;
+    addData(data: geojson.GeoJSON): Layer;
 
     /**
      * Resets the given vector layer's style to the original GeoJSON style,
@@ -1308,7 +1308,7 @@ export class GeoJSON<P = any> extends FeatureGroup<P> {
  * map (you can alternatively add it later with addData method) and
  * an options object.
  */
-export function geoJSON<P = any>(geojson?: geojson.GeoJson, options?: GeoJSONOptions<P>): GeoJSON<P>;
+export function geoJSON<P = any>(geojson?: geojson.GeoJSON, options?: GeoJSONOptions<P>): GeoJSON<P>;
 
 export type Zoom = boolean | 'center';
 
